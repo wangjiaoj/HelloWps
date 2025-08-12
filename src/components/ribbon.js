@@ -98,6 +98,20 @@ function OnAction(control) {
         )
       }
       break
+    case 'btnContentInsert':
+      {
+        let tsId = window.Application.PluginStorage.getItem('content_insert_taskpane_id')
+        if (!tsId) {
+          let tskpane = window.Application.CreateTaskPane(Util.GetUrlPath() + Util.GetRouterHash() + '/content-insert')
+          let id = tskpane.ID
+          window.Application.PluginStorage.setItem('content_insert_taskpane_id', id)
+          tskpane.Visible = true
+        } else {
+          let tskpane = window.Application.GetTaskPane(tsId)
+          tskpane.Visible = !tskpane.Visible
+        }
+      }
+      break
     default:
       break
   }
@@ -113,6 +127,8 @@ function GetImage(control) {
       return 'images/2.svg'
     case 'btnShowTaskPane':
       return 'images/3.svg'
+    case 'btnContentInsert':
+      return 'images/4.svg'
     default:
   }
   return 'images/newFromTemp.svg'
@@ -131,6 +147,10 @@ function OnGetEnabled(control) {
       let bFlag = window.Application.PluginStorage.getItem('EnableFlag')
       return bFlag
     }
+    case 'btnContentInsert':
+      return true
+    case 'btnTestContentInsert':
+      return true
     default:
       break
   }
@@ -154,6 +174,8 @@ function OnGetLabel(control) {
       let bFlag = window.Application.PluginStorage.getItem('ApiEventFlag')
       return bFlag ? '清除新建文件事件' : '注册新建文件事件'
     }
+    case 'btnContentInsert':
+      return '内容插入'
   }
   return ''
 }

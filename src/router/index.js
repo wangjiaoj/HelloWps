@@ -18,6 +18,11 @@ const router = createRouter({
       path: '/taskpane',
       name: '任务窗格',
       component: () => import('../components/TaskPane.vue')
+    },
+    {
+      path: '/content-insert',
+      name: '内容插入',
+      component: () => import('../components/ContentInsert.vue')
     }
   ]
 })

@@ -10,6 +10,9 @@
                     <button id="btnApiEvent" getLabel="ribbon.OnGetLabel" onAction="ribbon.OnAction" getEnabled="ribbon.OnGetEnabled"  getImage="ribbon.GetImage" getVisible="ribbon.OnGetVisible" size="large"/>
                     <button id="btnWebNotify" label="给业务系统发通知" onAction="ribbon.OnAction" enabled="true"  getImage="ribbon.GetImage" getVisible="ribbon.OnGetVisible" size="large"/>
 				</group>
+				<group id="btnContentGroup" label="内容插入">
+                    <button id="btnContentInsert" label="内容插入" onAction="ribbon.OnAction" getEnabled="ribbon.OnGetEnabled" getImage="ribbon.GetImage" getLabel="ribbon.OnGetLabel" size="large"/>
+				</group>
             </tab>
         </tabs>
     </ribbon>

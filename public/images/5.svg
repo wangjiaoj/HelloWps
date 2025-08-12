@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 测试/实验图标 -->
+  <path d="M9 12l2 2 4-4"/>
+  <path d="M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"/>
+  <path d="M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"/>
+  <path d="M12 3c0 1-1 2-2 2s-2 1-2 2-1 2-2 2-2 1-2 2 1 2 2 2 2 1 2 2 1 2 2 2 2-1 2-2 1-2 2-2 2-1 2-2 1-2-2-2-2-2-1-2-2-1-2-2-2z"/>
+  <circle cx="12" cy="12" r="3"/>
+  <path d="M12 1v6"/>
+  <path d="M12 17v6"/>
+  <path d="M4.22 4.22l4.24 4.24"/>
+  <path d="M15.54 15.54l4.24 4.24"/>
+  <path d="M1 12h6"/>
+  <path d="M17 12h6"/>
+  <path d="M4.22 19.78l4.24-4.24"/>
+  <path d="M15.54 8.46l4.24-4.24"/>
+</svg>
+
+
